@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 200px);
     grid-gap: 1em;
+    justify-content: center;
   }
   
   .grid-item {
@@ -9,6 +10,11 @@
     height: 200px;
     width: 200px;
     border-radius: 10px;
+    
+    background-image: url("./Images/riddle.png");
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 
   .grid-item:hover{
@@ -18,8 +24,42 @@
   
   #box10 {
     grid-column: 2 / 2;    /* Start from column-line 2 and end at 2 */
+    background-image: url("./Images/riddle.png");
+    background-size: 80px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
   
-  #last-item-2 {
-    grid-column: 2 / 3;    /* Start from column-line 3 and end at 4 ---- UNUSED ATM--- */
+  #score {
+    grid-column: 3 / 4;    /* Start from column-line 3 and end at 4 ---- UNUSED ATM--- */
   }
+
+  #score {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: whitesmoke;
+
+  }
+
+ 
+
+  #lives, #matchStatus {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    justify-content: center;
+  }
+
+  .bat-logo {
+    width: 100px;
+  }
+
+  body {
+    background-image: url('./Images/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+  
